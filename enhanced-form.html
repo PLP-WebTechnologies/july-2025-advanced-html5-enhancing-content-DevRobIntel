@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Advanced HTML5 Practice Page - Lists, Tables, Media, and Forms by Robert Kibugi." />
+  <title>Enhanced HTML5 Content & Forms - Robert Kibugi</title>
+</head>
+<body>
+  <header>
+    <h1>Robert Kibugi</h1>
+    <p>Software Engineer | HTML5, Accessibility & Web Standards</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#skills">Skills (List)</a></li>
+        <li><a href="#projects-table">Projects (Table)</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact-form">Contact Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- LISTS -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <p>Here are some of the tools and technologies I use:</p>
+
+      <h3>Languages & Frameworks</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+
+      <h3>Tools</h3>
+      <ol>
+        <li>Git & GitHub</li>
+        <li>Visual Studio Code</li>
+        <li>Figma</li>
+        <li>Chrome DevTools</li>
+      </ol>
+    </section>
+
+    <!-- TABLE -->
+    <section id="projects-table">
+      <h2>Completed Projects</h2>
+      <table border="1">
+        <caption>Portfolio Highlights</caption>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Technology</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Accessible Portfolio</td>
+            <td>HTML5, ARIA</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>SEO Blog Platform</td>
+            <td>React, Node.js</td>
+            <td>2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="media">
+      <h2>Media Showcase</h2>
+
+      <h3>Profile Image</h3>
+      <img src="https://deeptechlabs.co.ke/wp-content/uploads/2021/09/robert.jpg" 
+           alt="Robert Kibugi profile photo" width="200" height="200" />
+
+      <h3>Introduction Audio</h3>
+      <audio controls>
+        <source src="https://deeptechlabs.co.ke/Robert%20Kibugi%20Software%20Engineer%20Audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Project Demo Video</h3>
+      <video width="320" height="240" controls>
+        <source src="https://deeptechlabs.co.ke/Robert%20Kibugi%20Software%20Engineer%20Video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- FORM -->
+    <section id="contact-form">
+      <h2>Contact Me</h2>
+      <form action="/submit" method="post" autocomplete="on">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+
+          <br><br>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="e.g. example@email.com" required />
+
+          <br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" required />
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Feedback</legend>
+
+          <label for="reason">Reason for Contact:</label>
+          <select id="reason" name="reason" required>
+            <option value="">--Select--</option>
+            <option value="hire">Project Hire</option>
+            <option value="collab">Collaboration</option>
+            <option value="chat">Just to Connect</option>
+          </select>
+
+          <br><br>
+
+          <label for="message">Your Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="40" minlength="20" placeholder="Write at least 20 characters..." required></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+
+        <br><br>
+
+        <input type="submit" value="Send Message" />
+        <input type="reset" value="Reset Form" />
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Robert Kibugi | <a href="mailto:devrobertkibugi@gmail.com">devrobertkibugi@gmail.com</a> | 
+      <a href="https://www.linkedin.com/in/robertkibugi/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
